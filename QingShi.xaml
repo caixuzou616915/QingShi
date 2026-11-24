@@ -1,0 +1,10 @@
+<DrawingGroup xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+  <GeometryDrawing Brush="Transparent" Geometry="M0,0 H64 V64 H0 Z"/>
+  <GeometryDrawing Brush="#21394C" Geometry="M13,1 H51 Q63,1 63,13 V51 Q63,63 51,63 H13 Q1,63 1,51 V13 Q1,1 13,1 Z"/>
+  <GeometryDrawing Brush="#80DAC3" Geometry="M15,14 H42 Q45,14 45,18 H18 Q16,18 16,20 V42 H15 Q11,42 11,38 V18 Q11,14 15,14 Z"/>
+  <GeometryDrawing Brush="#F5FBFA" Geometry="M24,22 H50 Q54,22 54,26 V46 Q54,50 50,50 H24 Q20,50 20,46 V26 Q20,22 24,22 Z"/>
+  <GeometryDrawing Brush="#21394C" Geometry="M24,42 L31,35 L36,40 L44,31 L50,37 V45 H24 Z"/>
+  <GeometryDrawing Brush="#16776E">
+    <GeometryDrawing.Geometry><EllipseGeometry Center="28,29.5" RadiusX="2.8" RadiusY="2.8"/></GeometryDrawing.Geometry>
+  </GeometryDrawing>
+</DrawingGroup>

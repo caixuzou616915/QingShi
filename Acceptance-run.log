@@ -1,0 +1,16 @@
+Created: D:\Application\DuplicateMediaApp\DuplicateMediaApp.exe
+ENV OS=10.0.26200.0 process=x64 CLR=4.0.30319.42000 timestamp=2026-11-24T10:11:57.8979140+08:00
+PASS 同内容异名、跨类型、中文/空格/大于 260 字符路径、空文件、抽样碰撞、完整 SHA、真实 ACL 拒绝与独占锁
+PASS CSV BOM、完整路径、含逗号文件名、组号/勾选/完整哈希，不覆盖已有文件
+PASS 单个视频读取中途的字节进度与取消，媒体仍在原位
+PASS 整组勾选、勾选项与保留项同长度同时间改写、保留副本移走均拒绝回收
+PASS 拒绝 UNC、注入不可用回收站、真实文件禁止重命名时的 Shell 回收失败；源文件保留
+PASS 真实回收成功一项后取消：保留副本受锁保护，未处理项未变；从 Windows 回收站还原并逐字节比对
+PASS 窗口与 EXE 图标一致；宽窗工具栏与清理按钮对齐，窄窗操作不越界
+PASS 真实窗体：手动输入、虚拟清单、整组拒绝框、数量/大小确认、拒绝执行、混合成功/失败仅剔除成功行
+PASS 125%/150%/200% 字体与布局尺寸压力：按钮在窗内且达到首选尺寸（未修改系统 DPI）
+FIXTURE 200 folders, 19999 x (2 x 1 KiB) + 1 x (2 x 1 GiB); generation=52.547s (excluded)
+SCAN media=40000 sizeCandidates=40000 fullCandidates=40000 groups=20000 rows=40000 skipped=0 readBytes=2188441600/2188441600 enum=0.171s sample=8.476s full=9.842s total=18.488s
+UI scan+bind=18.589s timer=50ms intervals=294 p95=73.7ms max=128.0ms distinctUpdatesOnOne1GiBFile=8
+PASS 4 万文件实际界面扫描及绑定、单个大视频字节进度、滚动末行、界面取消后仍为 4 万文件
+PASS all requested cases
